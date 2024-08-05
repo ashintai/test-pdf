@@ -20,6 +20,7 @@
     <!-- PDF テストへのボタン -->
 
     <form action="{{ url('dompdf/pdf') }}" method="GET" target="_blank">
+    <input type="hidden" name="name" value="山田太郎">
                 <button >駐車券発行</button>
             
             </form>
