@@ -18,7 +18,12 @@
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         
     <!-- PDF テストへのボタン -->
-    <a href="{{ url('dompdf/pdf') }}">PDFテスト</a>
+
+    <form action="{{ url('dompdf/pdf') }}" method="GET" target="_blank">
+                <button >駐車券発行</button>
+            
+            </form>
+
     
     
     
