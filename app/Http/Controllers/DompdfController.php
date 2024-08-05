@@ -17,7 +17,7 @@ class DompdfController extends Controller
     public function generatePDF(Request $request)
     {
 
-    return view( 'test');
+    return view( 'pdftest');
     
         // 画像データの準備
         // $format = public_path('images/parkticket.jpg') ;
