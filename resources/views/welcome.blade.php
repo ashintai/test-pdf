@@ -19,7 +19,8 @@
         
     <!-- PDF テストへのボタン -->
 
-    <form action="{{ url('dompdf/pdf') }}" method="GET" target="_blank">
+    <form action="{{ route('pdf') }}" method="GET" target="_blank">
+        @csrf
     <input type="hidden" name="name" value="山田太郎">
                 <button >駐車券発行</button>
             

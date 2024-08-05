@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 // PDF生成へのルート
-Route::get('dompdf/pdf' , [DompdfController::class , 'generatePDF']);
+Route::get('dompdf/pdf' , [DompdfController::class , 'generatePDF'])->name('pdf');
