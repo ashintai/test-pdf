@@ -4,7 +4,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>駐車券PDF出力</title>
-        <!-- <style>
+        <style>
         /* dompdf日本語文字化け対策 */
             @font-face {
                 font-family: ipag;
@@ -18,7 +18,10 @@
                 font-weight: bold;
                 src: url('{{ storage_path('fonts/ipag.ttf') }}') format('truetype');
             }
-        </style> -->
+            body {
+                font-family: ipag !important;
+            } 
+        </style>
     </head>
     <body>
         <div >   
