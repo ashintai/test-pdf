@@ -22,7 +22,7 @@ class DompdfController extends Controller
         $options->set('isFontSubsettingEnabled' , true);
         $dompdf = new Dompdf($options);
 
-        $html = view('pdftest')->render();
+        $html = view('dompdf.pdf')->render();
 
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4' , 'potrait');
