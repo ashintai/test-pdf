@@ -24,14 +24,7 @@
         </style>
     </head>
     <body>
-
-
     <p>こんにちわ！</p>
     <p>konnichiwa</p>
-        <!-- <div >   
-                
-        ナンバー：{{ $data['zekken'] }}<br>
-                {{ $data['name'] }}
-        </div> -->
     </body>
 </html>
