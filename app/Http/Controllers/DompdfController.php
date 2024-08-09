@@ -25,7 +25,7 @@ class DompdfController extends Controller
         $html = view('pdftest')->render();
 
         $dompdf->loadHtml($html);
-        $dompdf-setPaper('A4' , 'potrait');
+        $dompdf->setPaper('A4' , 'potrait');
         $dompdf->render();
 
         return $dompdf->stream('document.pdf');
