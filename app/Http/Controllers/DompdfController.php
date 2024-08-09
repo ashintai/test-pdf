@@ -27,7 +27,7 @@ class DompdfController extends Controller
         $dompdf->loadHtml($html);
         $dompdf->setPaper('A4' , 'potrait');
         $dompdf->render();
-
+// AHO
         return $dompdf->stream('document.pdf');
 
     // // return view( 'pdftest');
