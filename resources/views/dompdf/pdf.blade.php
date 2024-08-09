@@ -7,7 +7,7 @@
         <style>
         /* dompdf日本語文字化け対策 */
             @font-face {
-                font-family: "ipag";
+                font-family: "IPAG";
                 font-style: normal;
                 font-weight: normal;
                 src: url('{{ storage_path('fonts/ipag.ttf') }}') format('truetype');
@@ -19,7 +19,7 @@
                 src: url('{{ storage_path('fonts/ipag.ttf') }}') format('truetype');
             } */
             body {
-                font-family: "ipag" , sans-serif;
+                font-family: "IPAG" , sans-serif;
             } 
         </style>
     </head>

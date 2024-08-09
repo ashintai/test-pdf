@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
-use Barryvdh\DomPDF\Dompdf;
-use Barryvdh\DomPDF\Options; 
+use DomPDF\Dompdf;
+use DomPDF\Options; 
 
 // Debug用にLogを残すため追加
 //use Illuminate\Support\Facades\Log;
