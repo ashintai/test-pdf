@@ -19,7 +19,7 @@ class DompdfController extends Controller
     {
        
        $pdf=\PDF::loadView('dompdf.pdf');
-       return $pdf->stream('title.pdf');
+       return $pdf->stream('駐車券.pdf');
 
        
        
