@@ -24,9 +24,14 @@
         </style>
     </head>
     <body>
-        <div >   
-                ナンバー：{{ $data['zekken'] }}<br>
+
+
+    <p>こんにちわ！</p>
+    <p>konnichiwa</p>
+        <!-- <div >   
+                
+        ナンバー：{{ $data['zekken'] }}<br>
                 {{ $data['name'] }}
-        </div>
+        </div> -->
     </body>
 </html>
