@@ -19,6 +19,17 @@ class DompdfController extends Controller
     {
        
        $pdf=\PDF::loadView('dompdf.pdf');
+
+       $pdf->setPaper('A4' , 'portrait');
+        
+       // 必要最低限のフォントのみをPDFへ埋め込み設定
+       $pdf->setOptions([
+           'isFontSubsettingEnabled' => true, // 必要最低限のフォントのみを埋め込む
+           // 一時的にコメントアウト
+           // 'defaultFont' => 'ipag', // デフォルトフォントを設定
+       ]);
+
+
        return $pdf->stream('駐車券.pdf');
 
        
