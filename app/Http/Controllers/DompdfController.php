@@ -18,17 +18,23 @@ class DompdfController extends Controller
     //PDFの生成
     public function generatePDF(Request $request)
     {
-        $options = new Options();
-        $options->set('isFontSubsettingEnabled' , true);
-        $dompdf = new Dompdf($options);
+       
+       $pdf=\PDF::loadView('dompdf.pdf');
+       return $pdf->stream('title.pdf');
 
-        $html = view('dompdf.pdf')->render();
+       
+       
+        // $options = new Options();
+        // $options->set('isFontSubsettingEnabled' , true);
+        // $dompdf = new Dompdf($options);
 
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4' , 'potrait');
-        $dompdf->render();
+        // $html = view('dompdf.pdf')->render();
+
+        // $dompdf->loadHtml($html);
+        // $dompdf->setPaper('A4' , 'potrait');
+        // $dompdf->render();
 // AHO
-        return $dompdf->stream('document.pdf');
+        // return $dompdf->stream('document.pdf');
 
     // // return view( 'pdftest');
     
